@@ -1,0 +1,79 @@
+.article-banner {
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.banner-image {
+  width: 50px; /* Dostosuj do potrzeb */
+  height: 50px; /* Dostosuj do potrzeb */
+  margin-right: 10px;
+}
+
+.banner-text 
+{
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.banner-button 
+{
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.banner-button:hover 
+{
+  background-color: #ff4500;
+}
+
+.modal 
+{
+  display: none; /* Ukryty domyślnie */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Półprzezroczyste tło */
+}
+
+.modal-content 
+{
+  font-size: 55px;
+  background-color: lightblue;
+  color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.goldFinger
+{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.sadButton
+{
+  margin: 5%;
+  padding: 5%;
+}

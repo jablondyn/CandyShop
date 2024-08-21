@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Candy Shop",
+  "version": "2.0",
+  "description": "Adds banner to every article on https://ujarani.com/nsfw/gorace/ with random precetage of fake discount.",
+  "author": "BlondiOneKenobi",
+  "content_security_policy": 
+  {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' data:;"
+  },
+  "action": 
+  {
+    "default_popup": "donation.html",
+    "default_icon": "icons/smile_32.png"
+  },
+  "icons": 
+  {
+    "16": "icons/smile_16.png",
+    "32": "icons/smile_32.png",
+    "48": "icons/smile_48.png",
+    "128": "icons/smile_128.png"
+  },
+
+  "permissions": ["storage"],
+  "web_accessible_resources": [
+    {
+      "resources": [ "icons/smile_48.png" , "images/finger.jpg", "images/qrcode.png" ],
+      "matches": [ "https://*/*" ]
+    }
+  ],
+
+  "content_scripts": 
+  [
+    {
+      "js": ["scripts/content.js"],
+      "css" : ["styles.css"],
+      "matches": 
+      [
+        "https://ujarani.com/nsfw/gorace/*"
+      ]
+    }
+  ]
+}
